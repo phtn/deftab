@@ -1,58 +1,15 @@
 "use client";
+
 import { HashIcon } from "@/assets/icons/hash";
-import { New } from "@/assets/icons/new";
 import { SwatchIcon } from "@/assets/icons/swatch";
 import { InputField } from "@/ui/input";
 import Json from "@/ui/jsonv";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/tabs";
+import { TabsContent } from "@/ui/tabs";
 import { pasteFn } from "@/utils/helpers";
 import { blendHex, isValidHexColor } from "@/utils/hexgen";
-import {
-  type ChangeEvent,
-  useCallback,
-  useMemo,
-  useState,
-  type PropsWithChildren,
-} from "react";
+import { type ChangeEvent, useCallback, useMemo, useState } from "react";
 
-//1B1F22
-export const Tools = () => {
-  return (
-    <div className="col-span-2 flex h-full w-full flex-col items-center bg-transparent">
-      <Title title="Dev Tools" />
-      <Content>
-        <Hex />
-      </Content>
-    </div>
-  );
-};
-// 1B1F22
-const Title = ({ title }: { title: string }) => {
-  return (
-    <div className="flex h-10 w-full items-center space-x-2 px-1 text-[#f1f1f1]">
-      <New fill="#cccccc" />
-      <p className="text-sm font-bold">{title}</p>
-    </div>
-  );
-};
-
-export const Content = ({ children }: PropsWithChildren) => {
-  return (
-    <Tabs
-      defaultValue="hex"
-      className="h-[36rem] w-full rounded-xl bg-transparent p-6"
-    >
-      <TabsList className="grid w-full grid-cols-2 text-zinc-500">
-        <TabsTrigger value="hex" className="w-fit">
-          Hex Blender
-        </TabsTrigger>
-      </TabsList>
-      {children}
-    </Tabs>
-  );
-};
-
-const Hex = () => {
+export const HexContent = () => {
   const [title, setTitle] = useState("title");
   const [hexOne, setHexOne] = useState("FAFAFA");
   const [hexTwo, setHexTwo] = useState("1A1A1A");
@@ -139,7 +96,7 @@ const Hex = () => {
   );
 
   return (
-    <TabsContent value="hex" className="bgtransparent">
+    <TabsContent value="hex" className="bg-transparent">
       <section className="flex items-center space-x-4">
         <InputField
           id="title"

@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import { MainContent } from "./content";
 
 export const metadata: Metadata = {
   title: "Default Tab",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable} antialiased`}>
-      <body>{children}</body>
+      <body>
+        <MainContent>{children}</MainContent>
+      </body>
     </html>
   );
 }

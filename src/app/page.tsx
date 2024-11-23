@@ -1,4 +1,4 @@
-import { MainContent } from "./content";
+import { ToolsContent } from "./(devtools)/content";
 export default async function MainPage() {
-  return <MainContent />
+  return <ToolsContent />;
 }
