@@ -7,9 +7,9 @@ export interface PageProps {
   };
 }
 export const metadata: Metadata = {
-  title: "Page",
-  description: "Page metadata",
-  icons: [{ rel: "icon", url: "/svg/icon.svg" }],
+  title: "New Tab",
+  description: "Time to useful default tabs",
+  icons: [{ rel: "icon", url: "//svg/logo.svg" }],
 };
 const DevtoolsPage = async () => {
   return <HexContent />;

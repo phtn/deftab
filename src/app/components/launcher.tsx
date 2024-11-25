@@ -1,3 +1,4 @@
+import { Particles } from "@/ui/particles";
 import Image from "next/image";
 
 export const Launcher = () => {
@@ -10,7 +11,7 @@ export const Launcher = () => {
             src="/svg/launcher/left_outer_blast.svg"
             width={0}
             height={0}
-            className="relative -bottom-0 -left-0 h-56 w-auto"
+            className="relative -bottom-0 -left-0 h-56 w-auto select-none"
             unoptimized
           />
         </div>
@@ -20,7 +21,7 @@ export const Launcher = () => {
             src="/svg/launcher/center_outer_blast.svg"
             width={800}
             height={400}
-            className="relative -bottom-8 -left-2 h-44 w-auto antialiased"
+            className="relative -bottom-8 -left-2 h-44 w-auto select-none antialiased"
             unoptimized
           />
         </div>
@@ -30,7 +31,7 @@ export const Launcher = () => {
             src="/svg/launcher/right_outer_blast.svg"
             width={0}
             height={0}
-            className="relative -bottom-0 right-0 h-auto w-full"
+            className="relative -bottom-0 right-0 h-auto w-full select-none"
             unoptimized
           />
         </div>
@@ -40,8 +41,28 @@ export const Launcher = () => {
 };
 
 export const Layer2 = () => (
-  <div className="absolute bottom-0 left-0 flex h-[354px] w-full items-end justify-between overflow-hidden">
-    <div className="w-full" />
+  <div className="_border-t-[0.33px] absolute bottom-0 left-0 grid h-[220px] w-full grid-cols-6 overflow-hidden border-gray-500 px-6">
+    <div className="col-span-2 h-full w-full" />
+    <div className="_border-x-[0.33px] relative z-[50] col-span-1 flex h-full w-full items-start justify-center border-gray-500 pr-[15px]">
+      <Image
+        alt="machd"
+        src={"/svg/machd.svg"}
+        width={0}
+        height={0}
+        priority
+        unoptimized
+        className="ml-[1px] h-[224px] w-auto select-none"
+      />
+      <div className="_border-x-[0.33px] absolute top-0 -ml-[1px] h-full w-[22px] rounded-t-[3px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
+        <div className="absolute top-0 h-1/2 w-[20px] animate-pulse bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
+        <Particles
+          className="absolute inset-0 top-0 h-1/4 select-none"
+          quantity={20}
+          ease={20}
+          refresh
+        />
+      </div>
+    </div>
 
     <div className="col-span-3 flex h-full w-full items-end">
       {/* <Image

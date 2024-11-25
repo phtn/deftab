@@ -5,9 +5,9 @@ import { type Metadata } from "next";
 import { MainContent } from "./content";
 
 export const metadata: Metadata = {
-  title: "Default Tab",
+  title: "New Tab",
   description: "Time to useful default tabs",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/svg/logo.svg" }],
 };
 
 export default function RootLayout({

@@ -6,7 +6,7 @@ import { SVG2Path } from "./@svg/content";
 
 export const ToolsContent = () => {
   return (
-    <div className="col-span-2 flex h-full w-full flex-col items-center bg-transparent">
+    <div className="relative z-[100] col-span-2 flex h-full w-full flex-col items-center bg-transparent">
       <Title title="Dev Tools" />
       <TabsComponent>
         <HexContent />

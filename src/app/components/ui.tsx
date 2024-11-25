@@ -21,6 +21,7 @@ const Secondary = (props: { image: string; href: string }) => (
   <div className="z-50 h-full w-full p-4 transition-colors duration-300 ease-out hover:bg-stone-300/10">
     <Link
       href={props.href}
+      target="_blank"
       className="flex size-full items-center justify-center"
     >
       <Image

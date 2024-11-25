@@ -11,8 +11,8 @@ import { type ChangeEvent, useCallback, useMemo, useState } from "react";
 
 export const HexContent = () => {
   const [title, setTitle] = useState("title");
-  const [hexOne, setHexOne] = useState("FAFAFA");
-  const [hexTwo, setHexTwo] = useState("1A1A1A");
+  const [hexOne, setHexOne] = useState("B0B1B2");
+  const [hexTwo, setHexTwo] = useState("F9C97C");
   const [isHexOneValid, setIsHexOneValid] = useState(true);
   const [isHexTwoValid, setIsHexTwoValid] = useState(true);
 
@@ -97,7 +97,7 @@ export const HexContent = () => {
 
   return (
     <TabsContent value="hex" className="bg-transparent">
-      <section className="flex items-center space-x-4">
+      <section className="flex items-center space-x-2">
         <InputField
           id="title"
           valid={"true"}
@@ -128,7 +128,7 @@ export const HexContent = () => {
           end="true"
         />
       </section>
-      <section className="my-4 flex w-full space-x-4">
+      <section className="my-4 flex w-full space-x-2">
         <div className="w-full overflow-clip">
           <Json src={src} />
         </div>

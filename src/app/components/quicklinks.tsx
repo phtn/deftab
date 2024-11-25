@@ -21,7 +21,10 @@ export const Quicklinks = () => (
         quicklinks
       </div>
       <div className="grid h-[6rem] w-full grid-cols-5">
-        <Primary href="https://www.youtube.com/" image="/svg/youtube.svg" />
+        <Primary
+          href="https://www.youtube.com/"
+          image="/svg/youtube.svg"
+        />
         <Primary href="https://www.x.com/" image="/svg/x.svg" />
         <Primary href="https://www.chatgpt.com/" image="/svg/openai.svg" />
         <Primary href="https://www.claude.ai/" image="/svg/claude.svg" />
@@ -35,6 +38,7 @@ const Primary = (props: { image: string; href: string }) => (
   <div className="z-50 h-full w-full">
     <Link
       href={props.href}
+      target="_blank"
       className="flex size-full items-center justify-center rounded-xl"
     >
       <Image

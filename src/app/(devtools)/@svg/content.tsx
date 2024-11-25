@@ -13,14 +13,14 @@ export const SVG2Path = () => {
   const handleChange = useCallback(
     async (e: ChangeEvent<HTMLTextAreaElement>) => {
       const v = e.target.value;
-      if (v.includes("<svg xmlns")) {
+      if (v.includes("<svg")) {
         const converted = await svg2Path(v);
         if (converted) {
           setPathdata(converted);
           setPathview(true);
         }
       } else {
-        console.table({ not_svg: v });
+        console.table({ message: "hello, bright one!" });
       }
     },
     [],
