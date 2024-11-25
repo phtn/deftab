@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const Trench = () => {
   return (
-    <div className="_border-x-[0.33px] col-span-1 flex w-full items-center justify-center border-gray-500">
-      <div className="relative flex h-full w-full items-end overflow-x-hidden">
+    <div className="_border-[0.33px] relative col-span-1 flex w-full items-start justify-center overflow-hidden border-gray-500">
+      <div className="_border-[0.33px] relative -mt-6 flex h-[calc(50vh)] w-full items-end overflow-hidden border-pink-500">
         <Image
           alt="starship"
           src={"/svg/starship.svg"}
@@ -11,7 +11,7 @@ export const Trench = () => {
           height={0}
           priority
           unoptimized
-          className="h-56 w-auto shrink-0 select-none"
+          className="_border-[0.33px] -mb-[11.20vh] h-[calc(50vh)] w-auto shrink-0 select-none border-gray-500"
         />
       </div>
     </div>

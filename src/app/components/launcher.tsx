@@ -41,9 +41,9 @@ export const Launcher = () => {
 };
 
 export const Layer2 = () => (
-  <div className="_border-t-[0.33px] absolute bottom-0 left-0 grid h-[220px] w-full grid-cols-6 overflow-hidden border-gray-500 px-6">
+  <div className="_border-t-[0.33px] absolute bottom-0 left-0 grid h-[50vh] w-full grid-cols-6 overflow-hidden border-gray-500 px-6">
     <div className="col-span-2 h-full w-full" />
-    <div className="_border-x-[0.33px] relative z-[50] col-span-1 flex h-full w-full items-start justify-center border-gray-500 pr-[15px]">
+    <div className="_border-[0.33px] relative z-[50] col-span-1 flex h-full w-full items-start justify-center border-green-500">
       <Image
         alt="machd"
         src={"/svg/machd.svg"}
@@ -51,10 +51,10 @@ export const Layer2 = () => (
         height={0}
         priority
         unoptimized
-        className="ml-[1px] h-[224px] w-auto"
+        className="h-[calc(25vh)] w-auto"
       />
-      <div className="_border-x-[0.33px] absolute top-0 -ml-[1px] h-full w-[22px] rounded-t-[3px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
-        <div className="absolute top-0 h-1/2 w-[20px] animate-pulse bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
+      <div className="absolute top-0 -ml-[2px] h-full w-[20px] rounded-t-[3px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
+        <div className="absolute top-0 h-1/2 w-[19px] animate-pulse rounded-t-[4px] bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
         <Particles
           className="absolute inset-0 top-0 h-1/4 select-none"
           quantity={20}
