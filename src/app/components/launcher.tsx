@@ -51,7 +51,7 @@ export const Layer2 = () => (
         height={0}
         priority
         unoptimized
-        className="ml-[1px] h-[224px] w-auto select-none"
+        className="ml-[1px] h-[224px] w-auto"
       />
       <div className="_border-x-[0.33px] absolute top-0 -ml-[1px] h-full w-[22px] rounded-t-[3px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
         <div className="absolute top-0 h-1/2 w-[20px] animate-pulse bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
