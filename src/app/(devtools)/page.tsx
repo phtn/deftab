@@ -9,7 +9,7 @@ export interface PageProps {
 export const metadata: Metadata = {
   title: "New Tab",
   description: "Time to useful default tabs",
-  icons: [{ rel: "icon", url: "//svg/logo.svg" }],
+  icons: [{ rel: "icon", url: "/svg/logo.svg" }],
 };
 const DevtoolsPage = async () => {
   return <HexContent />;
