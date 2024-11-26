@@ -1,5 +1,4 @@
 "use client";
-import { New } from "@/assets/icons/new";
 import { Tabs, TabsList, TabsTrigger } from "@/ui/tabs";
 import { type PropsWithChildren } from "react";
 import { HexContent } from "./(devtools)/@hex/content";
@@ -8,7 +7,7 @@ import { SVG2Path } from "./(devtools)/@svg/content";
 export const ToolsContent = () => {
   return (
     <div className="col-span-2 flex h-full w-full flex-col items-center bg-transparent">
-      <Title title="Dev Tools" />
+      <Title title="" />
       <TabsComponent>
         <HexContent />
         <SVG2Path />
@@ -18,9 +17,8 @@ export const ToolsContent = () => {
 };
 const Title = ({ title }: { title: string }) => {
   return (
-    <div className="flex h-10 w-full items-center space-x-2 px-1">
-      <New fill="#cccccc" />
-      <p className="bg-gradient-to-r from-indigo-100/50 via-rose-200/50 to-cyan-200/40 bg-clip-text font-bold text-transparent opacity-60">
+    <div className="flex h-10 w-full items-start">
+      <p className="bg-gradient-to-b from-indigo-100/50 via-rose-200/50 to-[#f9c97c]/80 bg-clip-text font-semibold text-transparent opacity-60">
         {title}
       </p>
     </div>
@@ -33,8 +31,8 @@ export const TabsComponent = ({ children }: PropsWithChildren) => {
       defaultValue="hex"
       className="h-[36rem] w-full rounded-xl bg-transparent"
     >
-      <TabsList className="grid w-fit grid-cols-2 text-zinc-500">
-        <TabsTrigger value="hex" className="w-fit active:text-white">
+      <TabsList className="via-papayawhip/90 grid w-fit grid-cols-2 bg-gradient-to-b from-rose-200/50 to-[#fafafa]/70 bg-clip-text text-sm text-transparent">
+        <TabsTrigger value="hex" className="w-fit active:text-amber-300">
           Hex Blender
         </TabsTrigger>
         <TabsTrigger value="svg" className="w-fit">

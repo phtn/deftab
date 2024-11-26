@@ -27,13 +27,13 @@ export const SVG2Path = () => {
   );
   return (
     <TabsContent value="svg" className="bg-transparent">
-      <section className="container flex h-96 w-full items-center justify-center overflow-scroll border border-pink-50/10">
+      <section className="container flex h-96 w-full items-center justify-center overflow-scroll">
         {pathview ? (
-          <Json src={{ pathdata }} />
+          <Json src={{ pathdata }} theme="railscasts" />
         ) : (
           <textarea
             onChange={handleChange}
-            className="h-full w-full bg-gray-400 text-xs"
+            className="h-full w-full rounded-lg border border-slate-500/50 bg-transparent text-xs"
           />
         )}
       </section>

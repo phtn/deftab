@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Launcher = () => {
   return (
-    <div className="relative flex h-[calc(100vh-354px)] w-full items-end overflow-clip">
+    <div className="relative flex h-[calc(50vh)] w-full items-end overflow-clip">
       <div className="grid h-full w-full grid-cols-12">
         <div className="col-span-3 flex h-full w-full items-end justify-start">
           <Image
@@ -11,8 +11,8 @@ export const Launcher = () => {
             src="/svg/launcher/left_outer_blast.svg"
             width={0}
             height={0}
+            loading="lazy"
             className="relative -bottom-0 -left-0 h-56 w-auto select-none"
-            unoptimized
           />
         </div>
         <div className="col-span-5 flex h-full w-full items-end overflow-x-visible">
@@ -21,8 +21,8 @@ export const Launcher = () => {
             src="/svg/launcher/center_outer_blast.svg"
             width={800}
             height={400}
+            loading="lazy"
             className="relative -bottom-8 -left-2 h-44 w-auto select-none antialiased"
-            unoptimized
           />
         </div>
         <div className="col-span-4 flex h-full w-full items-end overflow-auto">
@@ -31,8 +31,8 @@ export const Launcher = () => {
             src="/svg/launcher/right_outer_blast.svg"
             width={0}
             height={0}
+            loading="lazy"
             className="relative -bottom-0 right-0 h-auto w-full select-none"
-            unoptimized
           />
         </div>
       </div>
@@ -49,7 +49,7 @@ export const Layer2 = () => (
         src={"/svg/machd.svg"}
         width={0}
         height={0}
-        priority
+        loading="lazy"
         unoptimized
         className="h-[calc(25vh)] w-auto"
       />

@@ -2,7 +2,8 @@ import type { PropsWithChildren } from "react";
 import { Launcher, Layer2 } from "./components/launcher";
 import { Quicklinks } from "./components/quicklinks";
 import { Trench } from "./components/trench";
-import { UI } from "./components/ui";
+import { UIs } from "./components/uis";
+import Image from "next/image";
 
 export const MainContent = ({ children }: PropsWithChildren) => {
   return (
@@ -14,7 +15,7 @@ export const MainContent = ({ children }: PropsWithChildren) => {
 
         <div className="col-span-3 w-full space-y-6">
           <Quicklinks />
-          <UI />
+          <UIs />
         </div>
       </div>
 
@@ -22,6 +23,14 @@ export const MainContent = ({ children }: PropsWithChildren) => {
         <Launcher />
         <Layer2 />
       </div>
+
+      <Image
+        alt="spacex-logo"
+        src={"/svg/spacex.svg"}
+        width={0}
+        height={0}
+        className="pointer-events-none absolute bottom-2 left-2 z-[100] h-3 w-auto opacity-80"
+      />
     </main>
   );
 };
