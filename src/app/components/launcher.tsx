@@ -46,15 +46,15 @@ export const Layer2 = () => (
     <div className="_border-[0.33px] relative z-[50] col-span-1 flex h-full w-full items-start justify-center border-green-500">
       <Image
         alt="machd"
-        src={"/svg/machd.svg"}
+        src={"/svg/machd_v2.svg"}
         width={0}
         height={0}
         loading="lazy"
         unoptimized
-        className="h-[calc(25vh)] w-auto"
+        className="h-[24vh] w-auto"
       />
-      <div className="absolute top-0 -ml-[2px] h-full w-[20px] rounded-t-[3px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
-        <div className="absolute top-0 h-1/2 w-[19px] animate-pulse rounded-t-[4px] bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
+      <div className="absolute -top-0.5 h-full w-[34px] rounded-t-[6px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
+        <div className="absolute top-0 ml-0.5 h-1/2 w-[34px] animate-pulse rounded-t-[8px] bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
         <Particles
           className="absolute inset-0 top-0 h-1/4 select-none"
           quantity={20}
