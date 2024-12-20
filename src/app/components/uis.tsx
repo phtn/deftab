@@ -9,7 +9,7 @@ export const UIs = () => {
           key={ui.id}
           href={ui.href}
           src={ui.src}
-          aria-label={ui.description}
+          aria-label={ui.label}
         />
       ))}
     </div>
@@ -26,8 +26,8 @@ const Secondary = (props: { src: string; href: string }) => (
       <Image
         width={0}
         height={0}
-        className="h-4 w-auto"
-        alt=""
+        className="h-7 w-auto"
+        alt="prop.label"
         src={props.src}
       />
     </Link>

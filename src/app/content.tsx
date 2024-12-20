@@ -4,6 +4,7 @@ import { Quicklinks } from "./components/quicklinks";
 import { Trench } from "./components/trench";
 import { UIs } from "./components/uis";
 import Image from "next/image";
+import { BEs } from "./components/bes";
 
 export const MainContent = ({ children }: PropsWithChildren) => {
   return (
@@ -16,6 +17,7 @@ export const MainContent = ({ children }: PropsWithChildren) => {
         <div className="col-span-3 w-full space-y-6">
           <Quicklinks />
           <UIs />
+          <BEs />
         </div>
       </div>
 

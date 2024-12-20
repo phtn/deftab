@@ -41,17 +41,17 @@ export const Launcher = () => {
 };
 
 export const Layer2 = () => (
-  <div className="_border-t-[0.33px] absolute bottom-0 left-0 grid h-[50vh] w-full grid-cols-6 overflow-hidden border-gray-500 px-6">
+  <div className="absolute bottom-0 left-0 grid h-[50vh] w-full grid-cols-6 overflow-hidden border-gray-500 px-6">
     <div className="col-span-2 h-full w-full" />
-    <div className="_border-[0.33px] relative z-[50] col-span-1 flex h-full w-full items-start justify-center border-green-500">
+    <div className=" relative z-[50] col-span-1 flex h-full w-full items-start justify-center border-green-500">
       <Image
         alt="machd"
-        src={"/svg/machd_v2.svg"}
+        src={"/svg/machd_v3.svg"}
         width={0}
         height={0}
         loading="lazy"
         unoptimized
-        className="h-[24vh] w-auto"
+        className="h-[24vh] -top-1 relative topb w-auto"
       />
       <div className="absolute -top-0.5 h-full w-[34px] rounded-t-[6px] border-gray-700 bg-gradient-to-b from-indigo-300/40 via-pink-200/20 to-transparent">
         <div className="absolute top-0 ml-0.5 h-1/2 w-[34px] animate-pulse rounded-t-[8px] bg-gradient-to-b from-indigo-200/20 via-amber-100/20 to-transparent" />
@@ -65,14 +65,16 @@ export const Layer2 = () => (
     </div>
 
     <div className="col-span-3 flex h-full w-full items-end">
-      {/* <Image
+      {
+        /* <Image
         alt="right-outer-blast"
         src="/svg/launcher/right_outer_blast.svg"
         width={0}
         height={0}
         className="relative -bottom-24 right-6 h-full w-full"
         unoptimized
-      /> */}
+      /> */
+      }
     </div>
   </div>
 );
